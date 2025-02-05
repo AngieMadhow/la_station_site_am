@@ -47,5 +47,103 @@
    Éléments
    ====================================================================== */
 
-   
+   body{
+    font-family: "Dosis", serif;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  .wrapper {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ======================================================================
+   Contenu
+   ====================================================================== */
+
+  .titrelogo{ 
+
+  color: #000;
+  font-family: "Dosis", serif;
+  font-size: 43.34px;
+  font-weight: 700;
+  line-height: normal;
+  padding-right: 266px;
+  }
+
+  h1{
+    color: white;
+font-size: 36px;
+font-weight: 700;
+line-height: normal;
+  }
+
+  h2{
+
+  color: #2FCB48;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  }
   
+  h3{
+  font-size: 24px;
+  font-weight: 700;
+
+  }
+
+
+
+  
+   /*-------HERO------*/
+
+  .hero{
+  display: flex;
+  width: 455px;
+  height: 119px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.70);
+  }
+
+
+  .hero{
+    width: 1280px;
+    height: 100px;
+    background-image: url(../image/hero.jpg) ;
+    background-repeat: no-repeat;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /*-------HEADER------*/
+
+   header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+  
+  }
+  
+  a{
+    text-decoration: none;
+  }
