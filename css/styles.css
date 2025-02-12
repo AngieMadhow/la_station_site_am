@@ -65,21 +65,15 @@
    Contenu
    ====================================================================== */
 
-  .titrelogo{ 
-
-  color: #000;
-  font-family: "Dosis", serif;
-  font-size: 43.34px;
-  font-weight: 700;
-  line-height: normal;
-  padding-right: 266px;
-  }
+ 
 
   h1{
     color: white;
-font-size: 36px;
-font-weight: 700;
-line-height: normal;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 0;
+ text-align: center;
   }
 
   h2{
@@ -89,11 +83,18 @@ line-height: normal;
   font-size: 20px;
   font-weight: 400;
   line-height: normal;
+  text-align: center;
+
   }
   
   h3{
   font-size: 24px;
   font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 8px;
+  text-align: left;
+  display: block;
+  width: 100%;
 
   }
 
@@ -120,13 +121,10 @@ line-height: normal;
    ====================================================================== */
 
  /*-------HEADER------*/
-
+  
    header{
 
     background-color: white;
-    background-image: url(../image/snowboard.png);
-    background-repeat: no-repeat;
-    
    }
 
    header ul{
@@ -143,53 +141,97 @@ line-height: normal;
     list-style: none;
     gap: 30px;
     align-items: center;
+    padding-left: 0;
     
   
   }
 
-   /*-------HERO------*/
+  header nav ul li a {
+  display: inline-block;
+  height: 40px; 
+  line-height: 40px; 
+ 
+
+  }
+
+  header nav ul li a:hover {
+    background-color: #0E5EA1;
+    color: white;
+    border-radius: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+/*-------HERO------*/
 
   .hero{
+ 
+  background-image: url(../image/hero.jpg) ;
+  padding-top: 166px;
+  padding-bottom: 166px;
+  background-size: cover;
+  
+  }
+
+  .hero{
+
   display: flex;
-  width: 455px;
-  height: 119px;
-  padding: 20px;
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.70);
+  justify-content: center;
+  align-items: center;
   }
 
-
-  .hero{
-    width: 1280px;
-    height: 300px;
-    background-image: url(../image/hero.jpg) ;
-    background-repeat: no-repeat;
-    
-  }
-
+  
 /*-------CONTENU------*/
 
-.contenir{
+  .contenir{
 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-article{
-margin-top: 40px;
-margin-bottom: 40px;
-width: 320px;
-height: 714px;
-background-color: white;
-padding-top: 10px;
-padding-left: 10px;
-padding-right: 10px;
-border-bottom: #0E5EA1 solid 5px  ;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
-.contenu{
+  }
 
-  padding-bottom: 40px;
-}
+  .contenu{
+
+    padding-bottom: 40px;
+  }
+
+/*-------ARTICLE------*/
+  article{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 320px;
+    height: 714px;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: #0E5EA1 solid 5px  ;
+  }
+
+  article {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    height: 714px; 
+    padding-bottom: 20px;
+  }
+
+  article a {
+    display: block;
+    margin-top: auto; 
+    padding: 10px 20px;
+    background-color: #B7B7B7;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  article p{
+
+    margin-top: 0;
+  }
 
 /*-------FOOTER------*/
 
@@ -207,5 +249,34 @@ footer p{
   color: white;
   justify-content: center;
 }
-  
+
+/*-------IMAGE LOGO------*/
+.img_left{
+
+  margin-top: 40px;
+   float: left;
+ }
+
+ /*-------TITRE LOGO------*/
+
+ .titrelogo{ 
+
+  color: #000;
+  font-family: "Dosis", serif;
+  font-size: 43.34px;
+  font-weight: 700;
+  line-height: normal;
+  padding-right: 266px;
+  }
+
+ /*-------TITRE------*/
+  .titre{
+    width: 455px;
+    height: 119px;
+    padding: 20px;
+    background-color: #0E5EA1;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.70);
+    padding-bottom: 120px;
+  }
  
